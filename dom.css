@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+#count {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+h1{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: 1px black;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    border-radius: 1px solid black;
+}
+
+#error {
+    display: none;
+    color: red;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
