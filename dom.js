@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let count = 0;
 
     function updateCount() {
-        countDisplay.innerHTML = `<u>Your Current Count is: ${count}</u>`;
+        countDisplay.innerHTML = `<u>Your Current Count is</u>: ${count}`;
         if (count === 0) {
             clearBtn.style.display = 'none';
             errorDisplay.style.display = 'none';
@@ -21,13 +21,16 @@ document.addEventListener('DOMContentLoaded', function () {
         errorDisplay.style.display = 'block';
         setTimeout(function () {
             errorDisplay.style.display = 'none';
-        }, 2000); 
+        }, 3000); 
     }
 
     decrementBtn.addEventListener('click', function () {
         if (count > 0) {
             count--;
             updateCount();
+            if (count === 0) {
+                showError();
+            }
         } else {
             showError();
         }
@@ -41,5 +44,6 @@ document.addEventListener('DOMContentLoaded', function () {
     clearBtn.addEventListener('click', function () {
         count = 0;
         updateCount();
+        showError();
     });
 });
