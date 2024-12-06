@@ -33,6 +33,11 @@ button {
     margin: 20px 5px;
     
 }
+#clear{
+    border: 1px solid white;
+    color: white;
+    background-color: black;
+}
 
 button:hover {
     background-color: white;
